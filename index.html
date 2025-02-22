@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Bandera de México</h1>
+
+  <div class="bandera">
+    <!-- Verde -->
+    <div class="color" id="verdeContainer">
+      <p class="color-label">Esperanza</p>
+      <input type="range" id="verde" min="0" max="255" value="153" oninput="cambiarVerde()">
+      <p id="verdeHex">#009900</p>
+      <div class="cuadro" id="verdeColor"></div>
+    </div>
+
+    <!-- Blanco -->
+    <div class="color blanco" id="blancoContainer">
+      <p>#FFFFFF</p>
+      <div class="cuadro" id="blancoColor">
+        <img id="escudoImagen" src="escudo.jpeg" alt="Escudo de México" />
+      </div>
+    </div>
+
+    <!-- Rojo -->
+    <div class="color" id="rojoContainer">
+      <p class="color-label">Sangre de nuestros héroes</p>
+      <input type="range" id="rojo" min="0" max="255" value="157" oninput="cambiarRojo()">
+      <p id="rojoHex">#9D0000</p>
+      <div class="cuadro" id="rojoColor"></div>
+    </div>
+  </div>
+
+  <!-- Nombres al final de la página -->
+  <footer>
+    <p>FALCON RECINAS ABRAHAM 22200727</p>
+    <p>SUÁREZ OLIVARES MARICARMEN 22200770</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
